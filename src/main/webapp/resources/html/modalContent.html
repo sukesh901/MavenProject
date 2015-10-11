@@ -1,0 +1,41 @@
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaa -->
+<div class="main" style="background-color: #647FA7;">
+<div class="container">
+<div class="row">
+            
+            <div class="col-md-3" class="ngDialog_img">
+              <img class="imgheight" src="{{book.imgUrl}}">
+              <p style="color: white">Price:{{book.price.price | currency}}</p>
+            </div>
+            
+            <div class="col-md-5">
+              <ul class="list-group" style="color: black">
+                 <li class="list-group-item"><span>Author: {{ book.bookAuthor }}</span>  </li>
+                 <li class="list-group-item"><span>Genre: </span><span ng-repeat="genre in book.genre">{{genre}}</span>  </li>
+                 <li class="list-group-item"><span>Date: {{book.pubdate | date:'mediumDate' }}</span>  </li>
+                <li class="list-group-item"><span>On air: {{ book.pubdate | date:'EEEE'  }}</span>  </li>
+                
+              </ul>
+            </div>
+            
+</div>
+<div class="row" style="color: white">
+ <div class="col-md-8">
+   <h4 class="bookname">{{book.bookName}}</h4>
+   <h5 class="series" ng-show="book.series">{{book.series}}</h5>
+   <p style="height: 100px; overflow-y : scroll;">Summary: {{book.bookDesc}}</p>
+</div>
+          
+</div>
+</div>
+</div>
+
+<div class="ngdialog-buttons">
+		<button type="button" class="ngdialog-button ngdialog-button-secondary" ng-click=closeThisDialog("Cancel")>Cancel</button>
+		<button type="button" class="ngdialog-button ngdialog-button-primary" ng-click=confirm("OK")>OK</button>
+</div>
+
+
+
+
+ 
