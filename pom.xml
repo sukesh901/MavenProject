@@ -149,6 +149,11 @@
                 <target>1.7</target>
             </configuration>
         </plugin>
+         <plugin>
+      		<groupId>br.com.ingenieux</groupId>
+      		<artifactId>beanstalk-maven-plugin</artifactId>
+      		<version>1.4.0</version>
+    </plugin>
     </plugins>
   </build>
 </project>
