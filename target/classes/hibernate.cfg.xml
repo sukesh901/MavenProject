@@ -11,3 +11,4 @@
         <mapping class="com.ang.model.AngbooksGenre" />
     </session-factory>
 </hibernate-configuration>
+#hi#
